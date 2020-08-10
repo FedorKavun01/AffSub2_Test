@@ -1,4 +1,4 @@
-package com.example.affsub2_test
+package com.example.affsub2_test.Model
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import kotlinx.coroutines.Deferred
@@ -9,7 +9,7 @@ import retrofit2.http.GET
 
 interface APIService {
     @GET("api")
-    fun getProfile(): Deferred<Response<com.example.affsub2_test.Response>>
+    fun getProfile(): Deferred<Response<APIResponse>>
 }
 
 object NetworkService {
@@ -19,5 +19,6 @@ object NetworkService {
         addCallAdapterFactory(CoroutineCallAdapterFactory()).
         addConverterFactory(GsonConverterFactory.create()).build()
 
-    fun getSevice() = retrofit.create(APIService::class.java)
+    fun getSevice() = retrofit.create(
+        APIService::class.java)
 }

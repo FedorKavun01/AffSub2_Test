@@ -1,6 +1,5 @@
-package com.example.affsub2_test
+package com.example.affsub2_test.Model
 
-import android.util.Log
 import retrofit2.Response
 import java.io.IOException
 

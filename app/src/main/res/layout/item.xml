@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="wrap_content"
+<LinearLayout android:layout_height="50dp"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
-    <ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <ImageView-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:foreground="@drawable/img"-->
+<!--        android:id="@+id/itemImage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"/>-->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/itemImage"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"/>
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"/>
     
     <TextView
         android:id="@+id/itemName"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"/>
 
 </LinearLayout>

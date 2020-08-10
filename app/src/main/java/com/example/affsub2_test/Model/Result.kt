@@ -1,4 +1,4 @@
-package com.example.affsub2_test
+package com.example.affsub2_test.Model
 
 import java.lang.Exception
 
