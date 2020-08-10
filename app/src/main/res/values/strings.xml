@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AffSub2_Test</string>
+    <string name="phone">Cell phone</string>
+    <string name="email">Email</string>
 </resources>
